@@ -27,12 +27,25 @@
             height: 30px;
             width: 100%;
             border: 2px solid #7d7d81;
+            position: relative;
         }
         .wrapper header .nav li{
             display: inline-block;
             width: 100px;
             height: 100%;
             text-align: center;
+        }
+        .wrapper header .nav li .sub-nav{
+            position: absolute;
+            display: none;
+            top: 26px;
+        }
+        .wrapper header .nav li .sub-nav li{
+            width: 100px;
+            height: 50px;
+            display: block;
+            background-color: #faebd6;
+            
         }
         .wrapper header .nav li a{
             display: block;
@@ -45,6 +58,10 @@
             background-color: beige;
             color: black;
         }
+       .wrapper header .nav li:hover .sub-nav{
+        
+        display: block;
+       }
         .wrapper .content img{
             width: 100%;
           
@@ -114,7 +131,7 @@
         .wrapper .content section .more-info label{
             margin-left: 5px;
             word-spacing: 5px;
-            width: 100px;
+            width: 250px;
        
         }
         footer .text-footer{
@@ -124,17 +141,19 @@
             background-image: url(../img/footer.png);
             background-repeat: no-repeat;
             background-size: cover;
+
         }
-       
+        
         footer .text-footer p{
             line-height: 70px;
             margin-left: 150px;
+            
             font-size: 20px;
             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: 400;
             color: #5e6864;
             letter-spacing: 3px;
-
+            
         }
       
 
@@ -153,7 +172,16 @@
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Product</a></li>
-                    <li><a href="">Services</a></li>
+                    <li><a href="">Services
+                        <div class="sub-nav">
+                            <ul>
+                                <li><a href="">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                
+                            </ul>
+                        </div>
+                    </a></li>
                     <li><a href="">Order</a></li>
                 </ul>
             </div>
@@ -189,14 +217,14 @@
                 </div>
                 <div class="more-info">
                     <h2 style="color: #514d4a; letter-spacing: 3px; font-family: Georgia, 'Times New Roman', Times, serif;">More info</h2>
-                    <img style="width: 200px; height: 150px; padding: 7px; border: 1px solid black;position: relative;" src="../img/Screenshot 2023-03-14 192241.png" alt="" srcset="">
-                    <label style="position: absolute;" for="">Our purpose is the clinet who gives to us the opportunity to serve and to make known the reality around the world.</label>
+                    
+                    <label style="position: absolute; color:#cfa98e ;word-spacing: 5px;" for=""> <img style="width: 150px; height: 100px; padding: 7px; border: 1px solid black;position: relative; float: left;" src="../img/Screenshot 2023-03-14 192241.png" alt="" srcset="">    Our purpose is the clinet who gives to us the opportunity to serve and to make known the reality around the world.</label>
                 </div>
             </section>
         </div>
         <footer>
             <div class="text-footer">
-                <p>c 2017 Software Engineering Department | Test Date: 16 Sept 2017</p>
+                <p>© 2017 Software Engineering Department | Test Date: 16 Sept 2017</p>
             </div>
         </footer>
     </div>
